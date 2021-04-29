@@ -1,4 +1,3 @@
-cat <<EOF> ~/tutorial/anthos-sample-deployment-config-repo/cluster/constraint.yaml
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sPSPPrivilegedContainer
 metadata:
@@ -9,4 +8,3 @@ spec:
       - apiGroups: [""]
         kinds: ["Pod"]
     excludedNamespaces: ["kube-system"]
-EOF
